@@ -3,7 +3,8 @@ import "./Quote.css";
 import axios from 'axios'
 import { UserContext } from "../../context/userContext";
 import Spinner from "../../lib/Spinner/Spinner";
-import { Snackbar, Alert } from "@mui/material";
+import { Snackbar, Alert, Button, Badge } from "@mui/material";
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Quote = () => {
   const [quote, setQuote] = useState("");
@@ -52,6 +53,13 @@ const Quote = () => {
   }
 
   const handleLikeClick = () => {
+    if(!quote) return
+    if(likes === 1) {
+      setOpen(true)
+      setMessage("You already liked this quote!")
+      setTypeOfSeverity("error")
+      return
+    }
     setLikes(prev => prev + 1);
     addFavorite(quote);
     setOpen(true)
@@ -76,8 +84,11 @@ const Quote = () => {
     </div>
     <div className="quote-features">
       <div className="quote-like-section">
-        <button className="quote-button" onClick={handleLikeClick}>Like</button>
-        <div className="like-counter">{likes}</div>
+      <Button variant="contained" color="primary" onClick={handleLikeClick}>
+        <FavoriteIcon sx={{ fontSize: 'large' }} />
+      </Button>
+      <Badge color="success" badgeContent={likes}>
+      </Badge>
       </div>
         <div className="quote-extra-info-wrapper">
           <span className="quote-author">- {quote?.author}</span>
