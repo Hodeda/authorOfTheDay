@@ -1,13 +1,13 @@
 .navlink-wrapper {
-    display: flex;
-    gap: 80px;
-    margin-right: 5%;
+	display: flex;
+	gap: 80px;
+	margin-right: 5%;
 }
 
 .nav-link {
-    cursor: pointer;
-    font-weight: 700;
-    position: relative;
+	cursor: pointer;
+	font-weight: 700;
+	position: relative;
 	padding: 5px 0;
 }
 
@@ -29,14 +29,13 @@
 	transition: width 0.3s ease;
 }
 
-
 .website-logo {
-    width: 180px;
-    height: 180px;
+	width: 180px;
+	height: 180px;
 }
 
 .navbar-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }

@@ -1,24 +1,22 @@
 .homepage-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
 .homepage-header {
-    text-align: center;
+	text-align: center;
 }
 
 .homepage-subheader {
-    color: #7d7979;
-    width: 50%;
-    text-align: center;
+	color: #7d7979;
+	width: 50%;
+	text-align: center;
 }
 
 .homepage-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-   
