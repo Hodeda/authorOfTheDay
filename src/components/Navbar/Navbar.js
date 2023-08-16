@@ -16,7 +16,7 @@ const Navbar = () => {
     </div>
     <div className="navlink-wrapper">
         <span id='/favorites' className="nav-link" onClick={handleNavigation}>Favorites</span>
-        <span id='/generator' className="nav-link" onClick={handleNavigation}>Generator</span>
+        <span id='/generators' className="nav-link" onClick={handleNavigation}>Generator</span>
     </div>
 
   </div>;

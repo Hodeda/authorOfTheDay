@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./Favorites.css";
 import { UserContext } from "../../context/userContext";
 import QuoteCard from "../../lib/QuoteCard/QuoteCard";
@@ -6,9 +6,6 @@ import QuoteCard from "../../lib/QuoteCard/QuoteCard";
 const Favorites = () => {
     const {favorites} = useContext(UserContext);
 
-    useEffect(() => {
-        console.log(favorites)
-    },[])
   return <div className="favorites-wrapper">
     <div className="favorites-title">
         <h1 className="favorites-header">Favorites</h1>
