@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+    const navigate = useNavigate()
   return <div className="navbar-wrapper">
     <div className="navbar-logo">
         <img className="website-logo" src="/images/author_logo.png" alt="website logo"/>

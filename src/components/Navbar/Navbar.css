@@ -7,7 +7,28 @@
 .nav-link {
     cursor: pointer;
     font-weight: 700;
+    position: relative;
+	padding: 5px 0;
 }
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 5px;
+	background-color: #008dff;
+	border-radius: 50px;
+	transform: translateX(-50%);
+	transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+	width: 70%;
+	transition: width 0.3s ease;
+}
+
 
 .website-logo {
     width: 180px;

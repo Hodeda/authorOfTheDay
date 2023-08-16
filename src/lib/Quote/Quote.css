@@ -38,6 +38,7 @@
 
 .quote-text {
     text-decoration: underline;
+    margin: 0% 2%;
 }
 
 .new-quote-button {
@@ -53,4 +54,19 @@
 
 .bottom-quote-section {
     align-self: center;
+}
+
+.quote-author,.quote-topic {
+    font-weight: 600;
+}
+
+.quote-topic-name {
+    font-weight: normal;
+}
+
+
+.quote-like-section {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
