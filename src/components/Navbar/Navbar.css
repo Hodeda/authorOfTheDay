@@ -32,6 +32,7 @@
 .website-logo {
 	width: 180px;
 	height: 180px;
+	cursor: pointer;
 }
 
 .navbar-wrapper {
