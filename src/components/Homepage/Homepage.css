@@ -1,0 +1,22 @@
+.homepage-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.homepage-header {
+    text-align: center;
+}
+
+.homepage-subheader {
+    color: #7d7979;
+}
+
+.homepage-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+   

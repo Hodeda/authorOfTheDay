@@ -1,0 +1,21 @@
+.navlink-wrapper {
+    display: flex;
+    gap: 80px;
+    margin-right: 5%;
+}
+
+.nav-link {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.website-logo {
+    width: 180px;
+    height: 180px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

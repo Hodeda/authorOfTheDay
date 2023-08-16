@@ -1,0 +1,56 @@
+.quote-extra-info-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.quote-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quote-button {
+    font-weight: 600;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #008dff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.quote-content {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    padding: 5% 0%;
+    align-self: center;
+}
+
+.quote-text {
+    text-decoration: underline;
+}
+
+.new-quote-button {
+    color: #008dff;
+    background-color: transparent;
+    border: 2px solid #008dff;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.bottom-quote-section {
+    align-self: center;
+}
