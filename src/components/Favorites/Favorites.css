@@ -33,3 +33,26 @@
     border-radius: 75px;
     padding: 15px 50px;
 }
+
+.favorites-empty {
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorites-empty-text {
+    font-weight: 500;
+}
+
+.favorites-empty-sub {
+    color: #7d7979;
+}
+
+.favorites-redirect-button {
+    font-weight: 700;
+    color: #008dff;
+    cursor: pointer;
+}
