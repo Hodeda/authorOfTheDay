@@ -2,11 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Quote.css";
 import axios from 'axios'
 import { UserContext } from "../../context/userContext";
+import Spinner from "../Spinner/Spinner";
 
 const Quote = () => {
 
   const [quote, setQuote] = useState("");
   const [likes, setLikes] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
   const { addFavorite } = useContext(UserContext);
   
 
@@ -15,12 +17,15 @@ const Quote = () => {
   },[])
 
   const fetchQuote = async () => {
+    setIsLoading(true);
     try {
       const response = await axios.get('https://api.quotable.io/random')
       setQuote(response?.data)
+      setLikes(0);
     } catch (error) {
       console.log(error)
     }
+    setIsLoading(false);
   }
 
   const handleLikeClick = () => {
@@ -30,7 +35,7 @@ const Quote = () => {
   
   return <div className="quote-wrapper">
     <div className="quote-content">
-        <span className="quote-text">"{quote?.content}"</span>
+        {isLoading ?  <Spinner/>: <span className="quote-text">"{quote?.content}"</span>}
     </div>
     <div className="quote-features">
       <div className="quote-like-section">

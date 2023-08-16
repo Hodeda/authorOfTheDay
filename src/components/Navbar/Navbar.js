@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return <div className="navbar-wrapper">
     <div className="navbar-logo">
-        <img id='/' className="website-logo" src="/images/author_logo.png" alt="website logo" onClick={handleNavigation}/>
+        <img id='/generators' className="website-logo" src="/images/author_logo.png" alt="website logo" onClick={handleNavigation}/>
     </div>
     <div className="navlink-wrapper">
         <span id='/favorites' className="nav-link" onClick={handleNavigation}>Favorites</span>

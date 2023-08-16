@@ -4,10 +4,17 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
+    width: 250px;
+    height: 250px;
 }
 
 .quote-card-content {
     text-align: center;
+    padding: 2% 4%;
+}
+
+.quote-card-topic {
+    font-weight: 700;
 }
 
 .quote-card-author {

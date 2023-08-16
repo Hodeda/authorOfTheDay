@@ -17,6 +17,19 @@
 
 .list-of-favorites {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     width: 90%;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-input {
+    border-radius: 75px;
+    padding: 15px 50px;
 }
