@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Quote.css";
 import axios from 'axios'
+import { UserContext } from "../../context/userContext";
 
 const Quote = () => {
 
   const [quote, setQuote] = useState("");
   const [likes, setLikes] = useState(0);
+  const { addFavorite } = useContext(UserContext);
+  
 
   useEffect(() => {
     fetchQuote()
@@ -15,7 +18,6 @@ const Quote = () => {
     try {
       const response = await axios.get('https://api.quotable.io/random')
       setQuote(response?.data)
-      console.log(response?.data)
     } catch (error) {
       console.log(error)
     }
@@ -23,6 +25,7 @@ const Quote = () => {
 
   const handleLikeClick = () => {
     setLikes(prev => prev + 1);
+    addFavorite(quote);
   }
   
   return <div className="quote-wrapper">

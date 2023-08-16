@@ -50,6 +50,7 @@
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .bottom-quote-section {
@@ -69,4 +70,14 @@
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.like-counter {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #008dff;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    font-weight: 700;
 }
