@@ -1,18 +1,18 @@
-import React, { useContext, useState } from "react";
-import "./Favorites.css";
-import { UserContext } from "../../context/userContext";
-import QuoteCard from "../../lib/QuoteCard/QuoteCard";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useState } from "react"
+import "./Favorites.css"
+import { UserContext } from "../../context/userContext"
+import QuoteCard from "../../lib/QuoteCard/QuoteCard"
+import { useNavigate } from "react-router-dom"
 
 const Favorites = () => {
-	const navigate = useNavigate();
-	const { favorites } = useContext(UserContext);
-	const [search, setSearch] = useState("");
+	const navigate = useNavigate()
+	const { favorites } = useContext(UserContext)
+	const [search, setSearch] = useState("")
 	const filteredFavorites = favorites.filter(
 		(quote) =>
 			quote.content.toLowerCase().includes(search.toLowerCase()) ||
 			quote.author.toLowerCase().includes(search.toLowerCase())
-	);
+	)
 
 	return (
 		<div className="favorites-wrapper">
@@ -40,7 +40,7 @@ const Favorites = () => {
 					<span className="favorites-empty-sub">
 						in order to have favorites{" "}
 						<span
-							onClick={() => navigate("/generators")}
+							onClick={() => navigate("/")}
 							className="favorites-redirect-button"
 						>
 							Click here!
@@ -55,7 +55,7 @@ const Favorites = () => {
 				))}
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Favorites;
+export default Favorites
